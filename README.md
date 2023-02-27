@@ -59,6 +59,6 @@ Version control is important because it allows a team to collaborate by tracking
 - [Connect workstation to GitHub](Connect%20your%20Workstation.md)
 - [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
-- [Create a Pull Request](Create%20a%20Pull%20%Request.md)
-- [Review Changes and Merge to Master](Review%20Changes%20and%20Merge%20to%20Master.mdCreate%20a%20Pull%20%Request.md)
+- [Create a Pull Request](Create%20a%20Pull%20Request.md)
+- [Review Changes and Merge to Master](Review%20Changes%20and%20Merge%20to%20Master.mdCreate%20a%20Pull%20Request.md)
 - [Version Control in Ignition](Ignition.md)
