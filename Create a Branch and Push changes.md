@@ -22,13 +22,16 @@ git status
 ```
 Add file(s) to be Tracked
 ```shell
-# Single File
+# Single file
 git add file-name.fileType
+
+# Multiple files
+git add file-name-1.fileType file-name-2.fileType
 
 # Add all files
 git add . 
 ```
-Now that our files are being tracked, we need to commit those changes with a message. 
+Now that files are being tracked, commit those changes and add a message. 
 ```shell 
 git commit -m “Added code to files”
 
@@ -36,7 +39,7 @@ git commit -m “Added code to files”
 git commit && git commit -m “Added code to files”
 ```
 
-Once you've tracked your files and committed them, it is a good practice to verify a clean working tree.
+Once you've tracked your files and committed them, it is a good practice to verify a clean working tree (no untracked changes).
 ```shell 
 git status
 ```
