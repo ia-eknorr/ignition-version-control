@@ -37,3 +37,5 @@ gh auth login
 ```
 
 Now your workstation is connected to GitHub!
+
+**Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**
