@@ -18,7 +18,7 @@ This document loosely follows GitHub Flow, one of many version control strategie
     # Shorthand way to create and checkout a branch
     git checkout -b branch-name
     ```
-    > **_FAQ_**: How do I know if I'm on the right branch?
+    > :bulb: **FAQ**: How do I know if I'm on the right branch?
     >  
     > When [Initializing a Local Repository](Initialize%20a%20Local%20Repository.md), a default branch name of `main` was given. According to the Inductive Automation Style Guide, it is not recommended to develop on the `main`. If preparing to develop a new feature, consider making a new branch for that feature with a descriptive name.
 
@@ -41,9 +41,9 @@ This document loosely follows GitHub Flow, one of many version control strategie
         # Add all files
         git add . 
         ```
-    > **_Note_**: This adds files to the staging area, but doesn't commit them yet. The previous step can be done multiple times until all relevant files are added to the staging area
+    > :memo: **Note**: This adds files to the staging area, but doesn't commit them yet. The previous step can be done multiple times until all relevant files are added to the staging area
     
-    > **_FAQ_**: Which files do I add and commit?
+    > :bulb: **FAQ**: Which files do I add and commit?
     >
     > It's possible that some untracked changes shown in `git status` are not part of a certain commit or feature in general (in the case of a changed resource file that was not actually edited). It is recommended to make commits for one feature or sub-feature at a time. For instance, if a label was added to a view, then a style class was created to be added to that label. It would be recommended to make two commits: one for any style class changes, one for any changes made to that view.
 
@@ -70,7 +70,7 @@ This document loosely follows GitHub Flow, one of many version control strategie
       - `origin` is the name given to the remote repository when [initializing a remote repository](Initialize%20a%20Local%20Repository.md). Remember that it could be called something different than `origin`.
       - `HEAD` refers to the currently checked-out branch's latest commit. Alternatively, the current branch name could be explicitly called out here.
 
-> **_FAQ_**: What if I forget what I called my remote source?
+> :bulb: **FAQ**: What if I forget what I called my remote source?
 >
 > Run `git remote -v` to see all remote sources
 > ![Remote Sources](images/remote_sources.png)
