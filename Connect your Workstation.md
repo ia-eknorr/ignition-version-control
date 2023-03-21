@@ -36,6 +36,8 @@ gh auth login
 ✓ Logged in as your-username
 ```
 
+More information about the setup process can be found [here](https://docs.github.com/en/get-started/quickstart/set-up-git).
+
 Now your workstation is connected to GitHub!
 
 **Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**
