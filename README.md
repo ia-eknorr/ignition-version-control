@@ -6,7 +6,7 @@ Learn how to use version control with Git and Ignition.
 ## How to use this repository
 This repo can be used as a manual to be read from top to bottom in order to learn the basics of git all the way up to advanced strategies, or as a reference to be reminded of certain functions or strategies.
 
-> Note: bulleted that are not hyperlinked are roadmapped for later documentation development.
+> :memo: **Note**: bulleted that are not hyperlinked are roadmapped for later documentation development.
 
 ## Table of Contents
 - Basics of Git

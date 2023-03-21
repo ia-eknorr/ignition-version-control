@@ -29,7 +29,7 @@ To begin, set up your Ignition gateway. In this example we will use the built in
     - For Windows the directory should be: `C://Program Files Inductive Automation/Ignition/data/projects/samplequickstart`
 - Once there, ensure you are properly logged in to github or your desired remote repo.
   - In the terminal, add these commands with your information. 
-  - __Note:__ If you are having trouble with your GitHub credentials, please refer to [this](https://github.com/design-group/version-control) document. 
+  - :memo: **Note** If you are having trouble with your GitHub credentials, please refer to [this](https://github.com/design-group/version-control) document. 
 
 ```
 git config --global user.name "YourUserName"
