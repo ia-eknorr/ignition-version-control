@@ -11,7 +11,7 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
    - Comment: If necessary, add a few sentences or bullet list for added context of this feature.
 4. Select Create Pull Request
 
-> **_FAQ_**: What's the difference between a Pull Request and a Merge Request?
+> :bulb: **FAQ**: What's the difference between a Pull Request and a Merge Request?
 >
 > Nothing! These are different terms for the same thing created by GitHub (which uses Pull Request) and GitLab (which uses Merge Request). Remember that Git stands on it's own from external tools like GitHub, Gitlab, and Azure DevOps. These external tools are useful for collaboration and have different terms for the same features.
 

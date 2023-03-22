@@ -29,7 +29,7 @@ To begin, set up your Ignition gateway. In this example we will use the built in
     - For Windows the directory should be: `C://Program Files Inductive Automation/Ignition/data/projects/samplequickstart`
 - Once there, ensure you are properly logged in to github or your desired remote repo.
   - In the terminal, add these commands with your information. 
-  - __Note:__ If you are having trouble with your GitHub credentials, please refer to [this](https://github.com/design-group/version-control) document. 
+  - :memo: **Note** If you are having trouble with your GitHub credentials, please refer to [this](https://github.com/design-group/version-control) document. 
 
 ```
 git config --global user.name "YourUserName"
@@ -136,7 +136,7 @@ Pull requests are used when you want to add your code into the master branch. Th
   - **Merge Conflict:** Sometimes when trying to merge, there will be a conflict. This is because what is in the current branch and master are not the same. In order to choose which version you want, use this command: ```git pull origin branch_to_merge_with```. For example, ```git pull origin master``` will pull in all content from the master.
     - From here search the project for the characters ">>". This will show all conflicts. For every conflict, select whether you wand the HEAD or incoming version, save, and commit.
     - Push your code out with these newly resolved conflicts and look at GitHub to verify there are no more conflicts. 
-  - **Missing File:** Sometimes you will accidentally delete a file you disn't mean to. To fix this, use the following command: ```git checkout origin/branch_to_merge_with path/to/deleted/file```. For example, ```git checkout origin/master ignition/script-python/Example/code.py``` will add back the master's version of `Example/code.py`.
+  - **Missing File:** Sometimes you will accidentally delete a file you didn't mean to. To fix this, use the following command: ```git checkout origin/branch_to_merge_with path/to/deleted/file```. For example, ```git checkout origin/master ignition/script-python/Example/code.py``` will add back the master's version of `Example/code.py`.
   - **Reset to Previous Commit:** In the case you want to go back to a previous commit, find the commit you whish to go back to. Then use this command ```git reset <commit id>```. This would look something like: ```git reset e0b5ab11f1eeac6116b5a7abf4cbdf9b12f26990```. The commit id can be found by clicking the "commit" link in the right hand corner of the GitHub branch that would contain your commit.
 
 - Once everything is in order, select "Ready for review". You will now have a pull request.
