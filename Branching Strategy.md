@@ -1,13 +1,13 @@
 # Branching Strategies
 ## Purpose
 Having a well defined branching strategy can help teams work more effectively and efficiently and is important for several reasons:
-1. Provides a framework for organizing code changes and facilitates collaboration among team members. Using a consistient branching strategy can help team members more easily track changes and understand how different changes relate to one another.
+1. Provides a framework for organizing code changes and facilitates collaboration among team members. Using a consistent branching strategy can help team members more easily track changes and understand how different changes relate to one another.
 
 2. Manages the risks associated with code changes. By having separate branches for development, testing, and production, changes can be thoroughly tested and validated before they are merged into the main codebase.
 
 3. Allows for effective version control. By using branches to manage different versions of the code, teams can easily roll back changes or track changes made over time.
 
-That being said, there may be diferent strategies employed based on the size of the project, as the oversight desired in a larger project may not be necessary in a smaller project.
+That being said, there may be different strategies employed based on the size of the project, as the oversight desired in a larger project may not be necessary in a smaller project.
 
 > **_FAQ_**: How do I know which strategy to use?
 >
@@ -103,7 +103,7 @@ gitGraph
 3. Merge `my-feature` into `dev`
 4. Continue developing new features off of `dev`
 5. Once the features for a particular release have been completed, `dev` is ready to be merged into `main` and tagged for a new release.
-   1. Optionally, a `release` branch is created off the `dev` branch. This branch is used to prepare the codebase for a release, such as performing final testing, fixing any bugs, and updating documentation. After testing, `release` will be mmerged into `main` and tagged for a new release.
+   1. Optionally, a `release` branch is created off the `dev` branch. This branch is used to prepare the codebase for a release, such as performing final testing, fixing any bugs, and updating documentation. After testing, `release` will be merged into `main` and tagged for a new release.
 
 ### Pros:
 - Allows for parallel development to protect the production code
