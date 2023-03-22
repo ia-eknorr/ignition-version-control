@@ -26,7 +26,7 @@
       > - A remote name, for example, `origin`
       > - A remote URL, for example, https://inductive-git.ia.local/eknorr/version-control.
       > 
-      > Although any name _could_ be used to reference the remote repository, it is conventional to use  `origin`. Inductive Automation Style Guide should be followed wherever possible.
+      > Although any name _could_ be used to reference the remote repository, it is conventional to use  `origin`. The [IA Style Guide](Git%20Style%20Guide.md) should be followed wherever possible.
 
       > Note: A local repository can have multiple remote sources. In the case of a forked repository, an `upstream` remote would conventionally reference the original repository location, while `origin` would reference the copy that was made to push local changes for testing before pushing to the `upstream` repository.
 

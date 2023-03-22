@@ -20,7 +20,7 @@ This document loosely follows GitHub Flow, one of many version control strategie
     ```
     > :bulb: **FAQ**: How do I know if I'm on the right branch?
     >  
-    > When [Initializing a Local Repository](Initialize%20a%20Local%20Repository.md), a default branch name of `main` was given. According to the Inductive Automation Style Guide, it is not recommended to develop on the `main`. If preparing to develop a new feature, consider making a new branch for that feature with a descriptive name.
+    > When [Initializing a Local Repository](Initialize%20a%20Local%20Repository.md), a default branch name of `main` was given. According to the [IA Style Guide](Git%20Style%20Guide.md), it is not recommended to develop on the `main`. If preparing to develop a new feature, consider making a new branch for that feature with a descriptive name.
 
 3. Make edits to files in VSCode or Ignition Designer
    - Now that a working branch has been checked out, edits to files without affecting the main branch or remote repository.
