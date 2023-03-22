@@ -39,7 +39,7 @@ gitGraph
 ```
 ### Workflow
 1. **Create a main branch**: Create a main branch, typically called "main", which represents the latest stable version of the code.
-2. **Create a feature branch**: When starting work on a new feature or bugfix, create a new branch off of the main branch. Name the branch something that describes the feature or bugfix following the IA Style Guide, such as "feature/new-login-page".
+2. **Create a feature branch**: When starting work on a new feature or bugfix, create a new branch off of the main branch. Name the branch something that describes the feature or bugfix following the [IA Style Guide](Git%20Style%20Guide.md), such as "feature/new-login-page".
 
 3. **Develop on the feature branch**: Make changes and commits on the feature branch to implement the new feature or bugfix. Keep the changes focused on the specific feature or bugfix being worked on.
 
