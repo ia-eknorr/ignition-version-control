@@ -9,7 +9,7 @@ Having a well defined branching strategy can help teams work more effectively an
 
 That being said, there may be different strategies employed based on the size of the project, as the oversight desired in a larger project may not be necessary in a smaller project.
 
-> **_FAQ_**: How do I know which strategy to use?
+> :bulb: **_FAQ_**: How do I know which strategy to use?
 >
 > The choice of branching strategy depends on several factors including the size of the project, the number of engineers working on the project, and the cruciality of testing.
 >
@@ -22,7 +22,7 @@ That being said, there may be different strategies employed based on the size of
 ## GitHub Flow (Low Complexity Projects)
 In this workflow there is one default branch called `main`. Features branches will be created off of `main` and merged back in when finished. Multiple feature branches can be started at once, worked on by one or more developers. It is important to break each branch up into a _reasonable_ sized feature.
 
-``` Mermaid
+```mermaid
 gitGraph
    commit id: "initial-commit"
    branch feature-a
@@ -62,7 +62,7 @@ In this workflow, there are at least default branches: `main` and `dev` (with op
 
 Optionally, `dev` can branch to `release`, where testing and bug fixes will be performed before merging into `main` to be tagged as a release.
 
-```Mermaid
+```mermaid
 gitGraph
    commit id: "initial-commit"
    branch dev
