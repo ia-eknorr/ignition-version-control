@@ -6,7 +6,7 @@ Learn how to use version control with Git and Ignition.
 ## How to use this repository
 This repo can be used as a manual to be read from top to bottom in order to learn the basics of git all the way up to advanced strategies, or as a reference to be reminded of certain functions or strategies.
 
-> :memo: **Note**: bulleted that are not hyperlinked are road-mapped for later documentation development.
+> :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for later documentation development.
 
 ## Table of Contents
 - Basics of Git
@@ -18,12 +18,12 @@ This repo can be used as a manual to be read from top to bottom in order to lear
   - [Version control in Ignition](Ignition.md)
 
 - [IA Git Style Guide](Git%20Style%20Guide.md)
-- Branching Strategies
-- What is a branching strategy?
+- [Branching Strategies](Branching%20Strategy.md)
+  - What is a branching strategy?
   - Why should we use a branching strategy?
   - Conventional branching strategies for Ignition
-    - Small-scale
-    - Large-scale
+    - GitHub Flow strategy
+    - GitFlow strategy
 
 - Intermediate Git
   - intermediate commands

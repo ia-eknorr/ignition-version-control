@@ -1,4 +1,5 @@
-## Initialize a Local Repository
+# Initialize a Local Repository
+## Procedure
 1. In the CLI navigate to file directory for this project. Use `mkdir` to make a new directory if necessary.
     ```shell
     cd /Your/File/Path

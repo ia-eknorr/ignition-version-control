@@ -95,7 +95,7 @@ gitGraph
    commit
 ```
 
-## Workflow
+### Workflow
 1. Create default branches: 
    1. Create a `main` branch, which represents the latest stable version of the code.
    2. Create a `dev` branch, which will hold new features and be the starting place for release candidates

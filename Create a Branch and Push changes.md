@@ -1,10 +1,10 @@
-## Push Local Repository
-### Overview
+# Push Local Repository
+## Overview
 Git provides a framework to create multiple features between multiple developers at the same time, but the method by which a project implements git is left very open-ended. This section will provide a method by which "branches" can be created and maintained, as well as how to stage, commit, and push local changes to the remote repository to be merged with other collaborators' work.
 
-This document loosely follows GitHub Flow, one of many version control strategies. More information about GitHub Flow can be found [here](https://docs.github.com/en/enterprise-server@3.7/get-started/quickstart/github-flow).
+This document loosely follows GitHub Flow, one of many version control strategies. More information about GitHub Flow can be found in the [Branching Strategy Guide](Branching%20Strategy.md) or online [here](https://docs.github.com/en/enterprise-server@3.7/get-started/quickstart/github-flow).
 
-### Procedure
+## Procedure
 1. Get a list of all available branches and current working branch.
     ```shell
     git branch
