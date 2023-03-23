@@ -17,9 +17,8 @@ This repo can be used as a manual to be read from top to bottom in order to lear
   - [Review changes and merge to master](Review%20Changes%20and%20Merge%20to%20Master.md)
   - [Version control in Ignition](Ignition.md)
 
-- [IA Git Style Guide](Git%20Style%20Guide.md)
-- [Branching Strategies](Branching%20Strategy.md)
-  - What is a branching strategy?
+- Branching Strategies
+- What is a branching strategy?
   - Why should we use a branching strategy?
   - Conventional branching strategies for Ignition
     - GitHub Flow strategy
