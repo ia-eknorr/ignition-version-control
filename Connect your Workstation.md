@@ -1,4 +1,7 @@
 # Connect Workstation to GitHub
+## Table of Contents
+  - [Procedure](#procedure)
+
 ## Procedure
 1. Open a CLI
 2. Configure username and email. 

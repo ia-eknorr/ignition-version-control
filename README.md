@@ -1,4 +1,21 @@
 # Basics of Git
+## Table of Contents
+- [Basics of Git](#basics-of-git)
+  - [Table of Contents](#table-of-contents)
+  - [Purpose](#purpose)
+  - [How to use this repository](#how-to-use-this-repository)
+  - [Course Contents](#course-contents)
+  - [Overview](#overview)
+    - [What is Git?](#what-is-git)
+    - [Why do we use version control?](#why-do-we-use-version-control)
+    - [Why is version control important?](#why-is-version-control-important)
+  - [Software Requirements](#software-requirements)
+  - [Terms](#terms)
+  - [Common Git Commands](#common-git-commands)
+      - [example:](#example)
+  - [Common Shell Commands](#common-shell-commands)
+      - [example:](#example-1)
+  - [Objectives](#objectives)
 
 ## Purpose
 Learn how to use version control with Git and Ignition.
@@ -6,9 +23,9 @@ Learn how to use version control with Git and Ignition.
 ## How to use this repository
 This repo can be used as a manual to be read from top to bottom in order to learn the basics of git all the way up to advanced strategies, or as a reference to be reminded of certain functions or strategies.
 
+## Course Contents
 > :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for later documentation development.
 
-## Table of Contents
 - Basics of Git
   - [Connect workstation to GitHub](Connect%20your%20Workstation.md)
   - [Initialize a local repository](Initialize%20a%20Local%20Repository.md)
@@ -25,6 +42,7 @@ This repo can be used as a manual to be read from top to bottom in order to lear
     - GitFlow strategy
 
 - Intermediate Git
+  - Resolving Merge conflicts
   - intermediate commands
     - stash
     - reflog

@@ -1,4 +1,7 @@
 # Initialize a Local Repository
+## Table of Contents
+- [Procedure](#procedure)
+
 ## Procedure
 1. In the CLI navigate to file directory for this project. Use `mkdir` to make a new directory if necessary.
     ```shell

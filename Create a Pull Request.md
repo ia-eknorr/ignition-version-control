@@ -1,4 +1,7 @@
 # Create Pull Request
+## Table of Contents
+- [Overview](#overview)
+- [Procedure](#procedure)
 ## Overview
 Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch. Although it's not strictly necessary to make a pull request, it is recommended to create a pull request before merging each feature.
 ## Procedure

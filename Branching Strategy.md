@@ -1,4 +1,17 @@
 # Branching Strategies
+## Table of Contents
+- [Branching Strategies](#branching-strategies)
+  - [Table of Contents](#table-of-contents)
+  - [Purpose](#purpose)
+  - [GitHub Flow (Low Complexity Projects)](#github-flow-low-complexity-projects)
+    - [Workflow](#workflow)
+    - [Pros:](#pros)
+    - [Cons:](#cons)
+  - [GitFlow (Medium Complexity Projects)](#gitflow-medium-complexity-projects)
+    - [Workflow](#workflow-1)
+    - [Pros:](#pros-1)
+    - [Cons:](#cons-1)
+
 ## Purpose
 Having a well defined branching strategy can help teams work more effectively and efficiently and is important for several reasons:
 1. Provides a framework for organizing code changes and facilitates collaboration among team members. Using a consistent branching strategy can help team members more easily track changes and understand how different changes relate to one another.

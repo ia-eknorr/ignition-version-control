@@ -1,4 +1,10 @@
 # Push Local Repository
+## Table of Contents
+- [Push Local Repository](#push-local-repository)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Procedure](#procedure)
+
 ## Overview
 Git provides a framework to create multiple features between multiple developers at the same time, but the method by which a project implements git is left very open-ended. This section will provide a method by which "branches" can be created and maintained, as well as how to stage, commit, and push local changes to the remote repository to be merged with other collaborators' work.
 

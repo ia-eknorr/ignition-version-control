@@ -1,4 +1,15 @@
 # Ignition Example
+## Table of Contents
+- [Ignition Example](#ignition-example)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Required Tools](#required-tools)
+    - [Recommended Tools](#recommended-tools)
+  - [Initializing Your Repository](#initializing-your-repository)
+  - [About the Commands](#about-the-commands)
+  - [Developing a New Feature](#developing-a-new-feature)
+  - [How to Submit a Pull Request](#how-to-submit-a-pull-request)
+  - [Additional Resources](#additional-resources)
 
 ## Getting Started
 
