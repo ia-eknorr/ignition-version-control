@@ -9,7 +9,7 @@
     ```shell
     git init -b main
     ```
-> Note: This newly initialized repository has been given a default branch name of `main`. This could be called anything and has traditionally been called `master`, which has fallen out of favor in recent years, many instead opting for names like `main`, `trunk`, or `stable`.
+> :memo: **_Note_**: This newly initialized repository has been given a default branch name of `main`. This could be called anything and has traditionally been called `master`, which has fallen out of favor in recent years, many instead opting for names like `main`, `trunk`, or `stable`.
 
 3. Now that the **local** repository is initialized, go to [GitHub](https://github.com) and create the **remote** repository if has not already been created.
    - Check out the GitHub documentation on [Creating a Repo](https://docs.github.com/en/enterprise-server@3.7/get-started/quickstart/create-a-repo).
@@ -22,13 +22,13 @@
         ```shell
         git remote add origin <repository-link>
         ```
-      > Note: The git remote add command takes two arguments: 
+      > :memo: **_Note_**: The git remote add command takes two arguments: 
       > - A remote name, for example, `origin`
       > - A remote URL, for example, https://inductive-git.ia.local/eknorr/version-control.
       > 
       > Although any name _could_ be used to reference the remote repository, it is conventional to use  `origin`. Inductive Automation Style Guide should be followed wherever possible.
 
-      > Note: A local repository can have multiple remote sources. In the case of a forked repository, an `upstream` remote would conventionally reference the original repository location, while `origin` would reference the copy that was made to push local changes for testing before pushing to the `upstream` repository.
+      > :memo:**_Note_**: A local repository can have multiple remote sources. In the case of a forked repository, an `upstream` remote would conventionally reference the original repository location, while `origin` would reference the copy that was made to push local changes for testing before pushing to the `upstream` repository.
 
 The local repository is now linked with the remote repository and is ready to accept new changes.
 

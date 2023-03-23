@@ -9,7 +9,7 @@ Having a well defined branching strategy can help teams work more effectively an
 
 That being said, there may be different strategies employed based on the size of the project, as the oversight desired in a larger project may not be necessary in a smaller project.
 
-> **_FAQ_**: How do I know which strategy to use?
+> :bulb: **_FAQ_**: How do I know which strategy to use?
 >
 > The choice of branching strategy depends on several factors including the size of the project, the number of engineers working on the project, and the cruciality of testing.
 >
