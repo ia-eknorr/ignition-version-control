@@ -131,10 +131,11 @@ You have just made and initialized a GitHub repository. To verify, you can go to
 ## Develop a New Feature
 Now that the repository has been initialized, it's time to add a new feature. 
 
-- Create a new branch by typing this in the terminal: ```git checkout -b new_feature```.
-  - The `checkout` command allows for navigating to a branch. This command can also be used switching to another branch. For example, to get to the master branch the command is ```git checkout master```.
-  - The ```-b``` stands for branch. This creates the new branch.
-  - ```new_feature``` is the name of your branch. 
+- Create a new branch by typing this in the terminal: `git checkout -b new-feature`.
+  - The `checkout` command allows for navigating to a branch. This command can also be used switching to another branch. For example, to get to the master branch the command is `git checkout main`.
+  - The `-b` stands for branch. This creates the new branch.
+  - `new_feature` is the name of your branch.
+  - The [IA Git Style Guide] has a section on branching naming convention that can be used in the future.
 
 - Open the Ignition Designer and make a new view called `example_view`.
   ![Creating a New View](images/new_view_ignition.png)
