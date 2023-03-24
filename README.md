@@ -16,6 +16,7 @@
   - [Common Shell Commands](#common-shell-commands)
       - [example:](#example-1)
   - [Objectives](#objectives)
+  - [Requests? Issues?](#requests-issues)
 
 ## Purpose
 Learn how to use version control with Git and Ignition.
@@ -121,3 +122,7 @@ Version control is important because it allows a team to (among many other thing
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
 - [Review Changes and Merge to Master](Review%20Changes%20and%20Merge%20to%20Master.md)
 - [Version Control in Ignition](Ignition.md)
+
+## Requests? Issues?
+
+If you notice any gaps, typos, or unclear verbiage in this documentation or have any requests for a how-to guide, [open an issue](https://inductive-git.ia.local/eknorr/version-control/issues) or submit a pull request.
