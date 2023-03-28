@@ -24,10 +24,13 @@ Learn how to use version control with Git and Ignition.
 ## How to use this repository
 This repo can be used as a manual to be read from top to bottom in order to learn the basics of git all the way up to advanced strategies, or as a reference to be reminded of certain functions or strategies.
 
+If you consider yourself new to git with Ignition, it may be useful to go through the [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git), which will give you a practical ideal of git version control for Ignition development
+
 ## Course Contents
 > :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for later documentation development.
 
-- Basics of Git
+- [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git)
+- [Basics of Git](https://inductive-git.ia.local/eknorr/version-control)
   - [Connect workstation to GitHub](Connect%20your%20Workstation.md)
   - [Initialize a local repository](Initialize%20a%20Local%20Repository.md)
   - [Create a branch and push changes](Create%20a%20Branch%20and%20Push%20changes.md)
@@ -112,7 +115,6 @@ Version control is important because it allows a team to (among many other thing
 - [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
-- [Version Control in Ignition](Ignition.md)
 
 ## Requests? Issues?
 
