@@ -14,8 +14,9 @@
       - [Add .gitignore file](#add-gitignore-file)
       - [Create a remote repository](#create-a-remote-repository)
       - [Initialize the local repository](#initialize-the-local-repository)
-  - [Develop a New Feature](#develop-a-new-feature)
-  - [How to Submit a Pull Request](#how-to-submit-a-pull-request)
+    - [Develop a New Feature](#develop-a-new-feature)
+    - [Submit a Pull Request](#submit-a-pull-request)
+    - [Merge the pull request](#merge-the-pull-request)
   - [Additional Resources](#additional-resources)
 
 ## Purpose
@@ -45,6 +46,8 @@ This is a _Getting Started_ tutorial intended for those who are new or newer to 
 ## Procedure
 The goal of this exercise is to focus on version control and how it works with Ignition. That said, Ignition Quick Start project will be used as a starting place so there is something to add to a repository and version control. It is good to note that while this guide is used with Quick Start, the procedure is the same with a project where Quick Start isn't used. All references to the Quick Start project can be replaced with your project name. 
 
+---
+
 ### Set up the Ignition Gateway
 1. Commission and start the Ignition Gateway
 2. After commissioning, select "Yes, Enable Quick Start"
@@ -52,6 +55,8 @@ The goal of this exercise is to focus on version control and how it works with I
    2. [Here](https://docs.inductiveautomation.com/display/DOC80/Quick+Start+Guide) is a guide to the Ignition Quick Start if needed
 
 ![Gateway Startup Page](images/IgnitionQuickStart.png)
+
+---
 
 ### Initialize Repository 
 #### Open the project on Visual Studio Code
@@ -105,7 +110,7 @@ git config --global user.email "your@email.addr"
     git remote add origin <Your version control repository link>
     git add .
     git commit -m "Initial commit"
-    git push -u origin master
+    git push -u origin main
     ```
 2. About the commands:
 - `git init`: 
@@ -120,7 +125,7 @@ git config --global user.email "your@email.addr"
   - `commit` is the command for committing your work. A commit is good to do regularly, it allows for going back to the exact state of your work at the time of the commit.
   - `-m "Initial commit"` adds a message to the commit. In this case, the message is "Initial commit". It is important to be specific when writing the messages as it becomes difficult to remember what each commit was for and can be confusing if there was ever a need to rollback to a specific commit.
   - Without the `-m` it will open a text editor with a file that you can type the message into.
-- `git push origin main` allows for pushing all of the commits to the remote master.
+- `git push origin main` allows for pushing all of the commits to the remote main.
 
 
 You have just made and initialized a GitHub repository. To verify, you can go to your GitHub account and see the new repository. Below is an example
@@ -128,49 +133,86 @@ You have just made and initialized a GitHub repository. To verify, you can go to
 ![Initial Commit on Repo](images/initial_commit.png)
 
 ---
-## Develop a New Feature
-Now that the repository has been initialized, it's time to add a new feature. 
+### Develop a New Feature
+Now that your repository has been initialized, it's time to add a new feature. 
 
-- Create a new branch by typing this in the terminal: `git checkout -b new-feature`.
-  - The `checkout` command allows for navigating to a branch. This command can also be used switching to another branch. For example, to get to the master branch the command is `git checkout main`.
-  - The `-b` stands for branch. This creates the new branch.
-  - `new_feature` is the name of your branch.
-  - The [IA Git Style Guide] has a section on branching naming convention that can be used in the future.
+1. Create a new branch by running the following command in the integrated terminal
+   > `git checkout -b feature/change-background-color`.
+     - The `checkout` command allows for navigating to a branch. This command can also be used switching to another branch. For example, to get to the main branch the command is `git checkout main`.
+     - The `-b` stands for branch. This creates the new branch.
+     - `feature/change-background-color` is the name of your branch.
+       - The [IA Git Style Guide](https://inductive-git.ia.local/eknorr/git-style-guide#branches-1) has a section on branching naming convention that can be used in the future.
 
-- Open the Ignition Designer and make a new view called `example_view`.
+2. Open the Ignition Designer and make a new view called `example_view`.
   ![Creating a New View](images/new_view_ignition.png)
 
-- Edit the background color, for this example the background has been changed to red.
+3. Edit the background color, for this example the background has been changed to red.
   ![Edited View](images/edited_view.png)
-- Once your new feature has been added, save in the Ignition Designer and return to your terminal.
-- To see what you have edited, use the command `git status`. This will show you the status of all your work within the branch.
-  - You should see a few files modified specifically in `com.inductiveautomation.perspective`. 
+4. Once your new feature has been added, save in the Ignition Designer and return to your terminal.
+5. In the integrated terminal, run `git status` to show you the status of all your work within the branch.
+  - This should show that several files have been modified, specifically in `com.inductiveautomation.perspective`.
 
 ![Results from `git status`](images/git_status.png)
 
-- We now need to add these changes to the remote repository. Start with this command `git commit -am "Added cool new feature"`. 
-  - This is the `commit` command which we have done before but with the additional `-am`. The `a` stands for add. It removes the need for the `git add .` command we did earlier. The `m` stands for message.
+> :bulb: **_FAQ_**: What if `git status` shows modified files I didn't actually edit?
+>
+> This can happen for several reasons, a couple common problems are listed here:
+> 1. When a view or script is opened in the Ignition designer, the `resource.json` file for that view or script can be automatically updated by Ignition, even if no changes were made.
+>     - Solution: If you don't need these changes, you can run the following commands to "stash" these changes and remove them from the working tree.
+>       - `git stash push path/to/file`
+>       - If multiple files within the same directory need to be stashed, you can use `git stash push path/to/parent/*`, which will stash all modified files in that parent directory.
+> 2. You may have actually made changes to those files, and they belong in this feature.
+>     - Solution: Add the unexpectedly modified files to either this commit or to another commit if it belongs to another part of the same feature.
+>       - `git add path/to/unexpected/file && git commit -m "I need these changes, but they don't belong to the other part of my feature"`
+>       - `git add . && git commit -m "I included all my changes, even the ones I didn't expect"`
 
-- Use the command `git push origin HEAD` to push these changes in the commit to your remote repo. You should see in the terminal a new branch was created.
-  - `HEAD` is the current branch. This command in full is to push to the remote branch, `new_feature`.
-![Results from `git push origin HEAD`](images/new_branch_push.png)
-  - You should be pushing to your remote branch anytime you are done working on the branch, whether you are going to work on a different branch or are done working for the day. This allows other people to pick up where you left off without the chance of doubling up on work.
+6. Commit the new feature to the local repository by running the command `git commit -m "Feature: Changed background color"` in the integrated terminal.
+     - This is the `commit` command that was done earlier, but now to commit the new feature.
 
-## How to Submit a Pull Request
+7. Push the new feature from to the remote repository
+    - `git push origin HEAD`
+      - `HEAD` is the current branch. This command in full is to push to the remote branch, `feature/change-background-color`.
+      - Make sure you are connected to the IA VPN if your remote repository is hosted on inductive-git.ia.local
+    - You should see in the terminal a new branch was created.
+      ![Results from `git push origin HEAD`](images/new_branch_push.png)
 
-Pull requests are used when you want to add your code into the master branch. This allows for a review of your work and to get the team on board with the changes that are about to be added. To put in a pull request perform the below steps.
+> :memo: **_Note_**: In this example, `HEAD` was used as a shortcut to reference the current branch name. Note that the command `git push origin feature/change-background-color` would have had the same effect. Often, it is simpler to use head to refer to the branch you are on instead of trying to remember what the branch was called or making sure it was keyed correctly.
 
-- Push your latest changes to the remote branch.
-- Go to the `Pull requests` tab within GitHub.
-![Pull Request Page](images/pull_request_page.png)
-- Select `New pull request`
-- Select the branch you want to add your code to. This is usually the master branch. Then select the name of your branch. We should see an arrow pointing from `new_feature` to `master`.
-- ![New Feature to Master](images/feature_to_master.png)
-- Add a short description containing the purpose of the pull request. This will allow your reviewers to know what the purpose of the request is.
-- Select the drop down on the green button that says `Create Pull Request` and select `Create Draft Pull Request`.
-  - It is good practice to make a draft pull request first because it allows for you to review the changes you want to pull into the other branch. Make sure the pull request only has the changes directly relating to the branch. In other words, do not try to merge code involving the renaming of a variable when the branch is intended for only merging documentation.
+> :memo: **_Note_**: You should be pushing to your remote branch anytime you are done working on the branch, whether you are going to work on a different branch or are done working for the day. This allows other people to pick up where you left off without the chance of doubling up on work.
 
-- **Common Errors:** The goal of the pull request is to only have intended changes present. This means there should not be a change in the files that you did not alter. The only exception to this are the `resource.json` files.
+---
+
+### Submit a Pull Request
+Pull requests (PRs) let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+
+1. There are several ways to easily create a new PR. Choose any method you'd like:
+   -  After pushing changes from the integrated terminal, you can find a link that will take you directly to the Pull Request page with the correct branch selected and title pre-filled.
+    ![Pull request link](images/new_branch_push_link.png)
+   -  On the GitHub webpage, navigate to the `Pull requests` tab of your remote repository. The orange banner will have a shortcut to open a PR for recently pushed changes (shown with blue outline below. Click on the green button to "Compare and pull request" to create..
+   -  Manually create a Pull Request
+      - On the GitHub webpage, navigate to the `Pull requests` tab of your remote repository. 
+      - Select `New pull request` (Shown in pink below)
+      - Select the branch you want to add your code to. This is usually the master branch. Then select the name of your branch. You should see an arrow pointing from `feature/change-background-color` to `main`.
+      ![New Feature to Main](images/feature_to_main.png)
+
+    ![Pull Request Page](images/pull_request_page.png)
+
+2. Add a short description in the comment section containing the purpose of the pull request or a list of features added. This will allow your reviewers to know what the purpose of the request is.
+3. Select the drop down on the green button that says `Create Pull Request` and select `Create Draft Pull Request`.
+4. Finally, after reviewing the pull request, select "Ready for review" to let the repository owner there is a new feature to review.
+
+> :memo: **_Note_**: It is good practice to make a draft pull request first to review the changes you want to pull into the other branch. Make sure the pull request only has the changes directly relating to the branch. In other words, do not try to merge code involving the renaming of a variable when the branch is intended for only merging documentation.
+
+---
+
+### Merge the pull request
+The pull request must be merged before your new feature will be found in the remote repository. It is possible at this point for the repository owner to ask for changes, reject edits, or even reject and close the pull request altogether. In this case, since you are the owner of the repo, let's merge the new feature.
+
+1. 
+
+---
+
+  **Common Errors:** The goal of the pull request is to only have intended changes present. This means there should not be a change in the files that you did not alter. The only exception to this are the `resource.json` files.
   - **Unneeded File:** Sometimes Git will pick up a file that is not needed. For example, binary files. It is best to remove them while your file is still a draft. To do so, use the command ```git rm --cached file_name```.
     - ```rm``` stands for "remove". `cached` removes the file from the staging area. This means it will not be included in both the commit or the push. 
   - **Merge Conflict:** Sometimes when trying to merge, there will be a conflict. This is because what is in the current branch and master are not the same. In order to choose which version you want, use this command: ```git pull origin branch_to_merge_with```. For example, ```git pull origin master``` will pull in all content from the master.
