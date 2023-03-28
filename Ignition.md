@@ -16,7 +16,8 @@
       - [Initialize the local repository](#initialize-the-local-repository)
     - [Develop a New Feature](#develop-a-new-feature)
     - [Submit a Pull Request](#submit-a-pull-request)
-    - [Merge the pull request](#merge-the-pull-request)
+    - [Updating your local repository](#updating-your-local-repository)
+  - [Common Errors](#common-errors)
   - [Additional Resources](#additional-resources)
 
 ## Purpose
@@ -192,43 +193,63 @@ Pull requests (PRs) let you tell others about changes you've pushed to a branch 
    -  Manually create a Pull Request
       - On the GitHub webpage, navigate to the `Pull requests` tab of your remote repository. 
       - Select `New pull request` (Shown in pink below)
-      - Select the branch you want to add your code to. This is usually the master branch. Then select the name of your branch. You should see an arrow pointing from `feature/change-background-color` to `main`.
+      - Select the branch you want to add your code to. This is usually the main branch. Then select the name of your branch. You should see an arrow pointing from `feature/change-background-color` to `main`.
       ![New Feature to Main](images/feature_to_main.png)
 
     ![Pull Request Page](images/pull_request_page.png)
 
 2. Add a short description in the comment section containing the purpose of the pull request or a list of features added. This will allow your reviewers to know what the purpose of the request is.
 3. Select the drop down on the green button that says `Create Pull Request` and select `Create Draft Pull Request`.
-4. Finally, after reviewing the pull request, select "Ready for review" to let the repository owner there is a new feature to review.
+4. After reviewing the pull request, select "Ready for review" to let the repository owner there is a new feature to review.
 
 > :memo: **_Note_**: It is good practice to make a draft pull request first to review the changes you want to pull into the other branch. Make sure the pull request only has the changes directly relating to the branch. In other words, do not try to merge code involving the renaming of a variable when the branch is intended for only merging documentation.
 
----
-
-### Merge the pull request
-The pull request must be merged before your new feature will be found in the remote repository. It is possible at this point for the repository owner to ask for changes, reject edits, or even reject and close the pull request altogether. In this case, since you are the owner of the repo, let's merge the new feature.
-
-1. 
+5. Next, since you are the owner of the repository, select "Merge pull request". This will add the new feature to the remote repository.
+   1. On a real project, you may have someone review your feature before merging it into the main branch. It is possible at this point before merging, the repository owner may ask for changes, make edits, or even reject and close the pull request altogether.
+   2. Even if you are working alone, it is still good practice to make a pull request and merge. 
 
 ---
 
-  **Common Errors:** The goal of the pull request is to only have intended changes present. This means there should not be a change in the files that you did not alter. The only exception to this are the `resource.json` files.
-  - **Unneeded File:** Sometimes Git will pick up a file that is not needed. For example, binary files. It is best to remove them while your file is still a draft. To do so, use the command ```git rm --cached file_name```.
-    - ```rm``` stands for "remove". `cached` removes the file from the staging area. This means it will not be included in both the commit or the push. 
-  - **Merge Conflict:** Sometimes when trying to merge, there will be a conflict. This is because what is in the current branch and master are not the same. In order to choose which version you want, use this command: ```git pull origin branch_to_merge_with```. For example, ```git pull origin master``` will pull in all content from the master.
+### Updating your local repository
+Now that the feature has been merged, it's time to update your local repository and begin a new feature. Remember that in the same way you have to tell git when to **push** code _from_ your local repository, you also have to tell git when to **pull** code _to_ your local repository. Now that the feature branch has been merged, update your local repository with the most recent changes. Although in this case it's just your code, in a collaborative environment, there could be other features to merge as well as your own.
+
+1. In the integrated terminal, run `git checkout main`
+   1. If you dig into the files, you'll notice your changes are not there.
+   2. This also can be shown by merging changes on the designer after switching to main to see that the view does not exist.
+      1. Make sure that your designer scan frequency is changed to 10 seconds to quickly reflect these changes
+      2. If a designer merge conflict arises, take the gateway changes
+2. Run `git pull origin main`
+      - `pull`: fetch and merge changes from a remote repository
+      - `origin`: The remote repository to pull changes from
+      - `main`: The branch on the remote repository to pull
+      - The output should show the new changes from the remote repository
+    
+        ![Pull Remote Changes](images/pull_remote_changes.png)
+
+Now that your local and remote `main` branches are up to date with each other, you can start a new feature. For instance, if you next wanted to add some components on "example_view", you would run `git checkout -b "Feature: Add components on example_view"`, which would make a new branch for your feature, and the process begins again!
+
+> :bulb: **_FAQ_**: This took forever! Am I supposed to do this for _every_ feature? :weary:
+>
+> Yes, it is best practice to do this for each feature! With practice and repetition, this workflow becomes second nature and can be done very quickly with no time lost. While in this case our feature was very small, a feature could have been "Feature: Create example_view", where you would change the background color, add components, and add view parameters.
+
+---
+
+## Common Errors
+The goal of the pull request is to only have intended changes present. This means there should not be a change in the files that you did not alter. The only exception to this are the `resource.json` files. Most of these common errors stem from these fickle yet important files.
+  - **Unneeded File:** Sometimes Git will pick up a file that is not needed. For example, binary files. It is best to remove them while your file is still a draft. To do so, use the command `git rm --cached file_name`.
+    - `rm` stands for "remove". `cached` removes the file from the staging area. This means it will not be included in both the commit or the push. 
+  - **Merge Conflict:** Sometimes when trying to merge, there will be a conflict. This is because what is in the current branch and main are not the same. Files in both branches have been changed and you need to choose which changes to keep. In order to choose which version you want, use this command: `git pull origin branch_to_merge_with`. For example, `git pull origin main` will pull in all content from the main.
     - From here search the project for the characters ">>". This will show all conflicts. For every conflict, select whether you wand the HEAD or incoming version, save, and commit.
     - Push your code out with these newly resolved conflicts and look at GitHub to verify there are no more conflicts. 
-  - **Missing File:** Sometimes you will accidentally delete a file you didn't mean to. To fix this, use the following command: ```git checkout origin/branch_to_merge_with path/to/deleted/file```. For example, ```git checkout origin/master ignition/script-python/Example/code.py``` will add back the master's version of `Example/code.py`.
-  - **Reset to Previous Commit:** In the case you want to go back to a previous commit, find the commit you whish to go back to. Then use this command ```git reset <commit id>```. This would look something like: ```git reset e0b5ab11f1eeac6116b5a7abf4cbdf9b12f26990```. The commit id can be found by clicking the "commit" link in the right hand corner of the GitHub branch that would contain your commit.
-
-- Once everything is in order, select "Ready for review". You will now have a pull request.
-- Some pull requests will require a certain amount of reviews to merge into a branch. To do this, Select the gear in the right hand column next to "Reviewers." Select the people most appropriate for the review. They will be notified their review was requested.
-  - ![Adding a Review Request](images/request_review.png)
+  - **Missing File:** Sometimes you will accidentally delete a file you didn't mean to. To fix this, use the following command: ```git checkout origin/branch_to_merge_with path/to/deleted/file```. For example, ```git checkout origin/main ignition/script-python/Example/code.py``` will add back the main branch version of `Example/code.py`.
+  - **Reset to Previous Commit:** In the case you want to go back to a previous commit, find the commit you whish to go back to. Then use this command `git reset <commit id>`. This would look something like: `git reset e0b5ab11f1eeac6116b5a7abf4cbdf9b12f26990`.
+    - The commit id can be found by clicking the "commit" link in the right hand corner of the GitHub branch that would contain your commit, or by running `git log`
+      - To get out of `git log`, type `q`
 
 ## Additional Resources
 
 [Inductive Automation's Version Control Guide](https://www.inductiveautomation.com/resources/article/ignition-8-deployment-best-practices#gitlab-example)
 
-[Design Group's Version Control Guide](https://github.com/design-group/version-control)
+[IA's Version Control Guide](https://inductive-git.ia.local/eknorr/version-control)
 
-[My Example](https://github.com/evelyn-stodghill/ignition_version_control)
+[My Example](https://inductive-git.ia.local/eknorr/git-ignition-example)
