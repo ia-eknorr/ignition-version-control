@@ -21,7 +21,7 @@
 4. Finally, link workstation to the Remote Repository created. 
    1. Navigate to remote repository webpage
    2. Copy the repository link
-       - If the repo was just created, the link should be found near the top of the main page of the repo webpage: ![Repository Link](images/repository_link.png)
+       - If the repo was just created, the link should be found near the top of the main page of the repo webpage: ![Repository Link](images/repository-link.png)
    3. In the CLI, run the following script to tell the local repository
         ```shell
         git remote add origin <repository-link>

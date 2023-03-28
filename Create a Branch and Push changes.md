@@ -66,7 +66,7 @@ This document loosely follows GitHub Flow, one of many version control strategie
     ```shell 
     git status
     ```
-   - Expected output: ![Clean Working Tree](images/clean_working_tree.png)
+   - Expected output: ![Clean Working Tree](images/clean-working-tree.png)
 
 7. Push the tracked changes to remote repository.
     ```shell 
@@ -79,7 +79,7 @@ This document loosely follows GitHub Flow, one of many version control strategie
 > :bulb: **FAQ**: What if I forget what I called my remote source?
 >
 > Run `git remote -v` to see all remote sources
-> ![Remote Sources](images/remote_sources.png)
+> ![Remote Sources](images/remote-sources.png)
 
 Now that changes have been pushed from the local environment to the remote repository, it's time to merge changes into the remote main so all collaborators have access.
 
