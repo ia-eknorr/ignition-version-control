@@ -1,13 +1,15 @@
 # Create Pull Request
 ## Table of Contents
-- [Overview](#overview)
-- [Procedure](#procedure)
+- [Create Pull Request](#create-pull-request)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Procedure](#procedure)
 ## Overview
 Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch. Although it's not strictly necessary to make a pull request, it is recommended to create a pull request before merging each feature.
 ## Procedure
 1. On GitHub Enterprise Server webpage, navigate to the main page of the repository.
 2. Select Pull Request tab
-   1. If code from a branch was recently pushed, there may be a notification to create a pull request: ![New Pull Request](images/new_pull_request.png)
+   1. If code from a branch was recently pushed, there may be a notification to create a pull request: ![New Pull Request](images/new-pull-request.png)
    2. If this banner is not here, follow [these](https://docs.github.com/en/enterprise-server@3.7/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui) instructions to find your branch and create a pull request.
 3. Add verbiage about the commit(s) you made
    - Header: Sum up feature in a few words
