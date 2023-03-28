@@ -32,7 +32,6 @@ This repo can be used as a manual to be read from top to bottom in order to lear
   - [Initialize a local repository](Initialize%20a%20Local%20Repository.md)
   - [Create a branch and push changes](Create%20a%20Branch%20and%20Push%20changes.md)
   - [Create a pull request](Create%20a%20Pull%20Request.md)
-  - [Review changes and merge to master](Review%20Changes%20and%20Merge%20to%20Master.md)
   - [Version control in Ignition](Ignition.md)
 - [Branching Strategies](Branching%20Strategy.md)
 - Intermediate Git
@@ -67,9 +66,9 @@ Version control is important because it allows a team to (among many other thing
 | `HEAD` | Pointer to the most recent commit on the current branch |
 | `Index` | The cache where changes are stored before they are committed |
 | `Local Repository` | Where you keep your copy of a Git repository on your workstation |
-| `Master` | Default name of the first branch |
+| `Main` | Default name of the first branch |
 | `Merge` | Joining two or more commit histories |
-| `Merge Request` | A GitLab-specific term to let others know that you’d like your branch merged with master. |
+| `Merge Request` | A GitLab-specific term to let others know that you’d like your branch merged with main. |
 | `Pull Request` | GitHub-specific term to let others know about changes you've pushed to a branch in a repository. |
 | `Remote Repository` | A repository where you push changes for collaboration or backup |
 | `Stash` | Another cache, that acts as a stack, where changes can be stored without committing them |
@@ -113,7 +112,6 @@ Version control is important because it allows a team to (among many other thing
 - [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
-- [Review Changes and Merge to Master](Review%20Changes%20and%20Merge%20to%20Master.md)
 - [Version Control in Ignition](Ignition.md)
 
 ## Requests? Issues?
