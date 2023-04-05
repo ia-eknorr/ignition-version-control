@@ -28,7 +28,7 @@
         ```
       > :memo: **_Note_**: The git remote add command takes two arguments: 
       > - A remote name, for example, `origin`
-      > - A remote URL, for example, https://inductive-git.ia.local/eknorr/version-control.
+      > - A remote URL, for example, https://inductive-git.ia.local/eknorr/version-control.git
       > 
       > Although any name _could_ be used to reference the remote repository, it is conventional to use  `origin`. The [IA Git Style Guide](https://inductive-git.ia.local/eknorr/git-style-guide.git) should be followed wherever possible.
 
