@@ -1,23 +1,28 @@
 # Connect Workstation to GitHub
+
 ## Table of Contents
-  - [Procedure](#procedure)
+
+- [Procedure](#procedure)
 
 ## Procedure
+
 1. Open a CLI
-2. Configure username and email. 
+2. Configure username and email.
+
     ```shell
     git config --global user.name “your username”
     git config -–global user.email “your email”
     ```
 
 3. Verify email and username was configured correctly.
+
     ```shell
     git config --global user.name
     git config -–global user.email
     ```
 
-<!-- Still need to verify this part on Windows -->
 4. Authenticate with a GitHub Host
+
     ```shell
     gh auth login
 
