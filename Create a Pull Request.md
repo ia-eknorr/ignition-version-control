@@ -21,4 +21,5 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
 > Nothing! These are different terms for the same thing created by GitHub (which uses Pull Request) and GitLab (which uses Merge Request). Remember that Git stands on it's own from external tools like GitHub, Gitlab, and Azure DevOps. These external tools are useful for collaboration and have different terms for the same features.
 
 Once a pull request has been made, the code needs to be reviewed by the repository’s code owner to be merged into main branch. 
-  - You may the owner, in which case, you could approve the pull request and merge the code, but normally the Lead Engineer(s) on the project will review the code then perform the merge if they determine the code is correct. 
+
+- You may be the owner, in which case, you could approve the pull request and merge the code, but normally the Lead Engineer(s) on the project will review the code then perform the merge if they determine the code is correct.
