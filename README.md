@@ -1,5 +1,7 @@
 # Basics of Git
+
 ## Table of Contents
+
 - [Basics of Git](#basics-of-git)
   - [Table of Contents](#table-of-contents)
   - [Purpose](#purpose)
@@ -12,21 +14,24 @@
   - [Software Requirements](#software-requirements)
   - [Terms](#terms)
   - [Common Git Commands](#common-git-commands)
-      - [example:](#example)
+    - [Example](#example)
   - [Common Shell Commands](#common-shell-commands)
-      - [example:](#example-1)
+    - [Example](#example-1)
   - [Objectives](#objectives)
   - [Requests? Issues?](#requests-issues)
 
 ## Purpose
+
 Learn how to use version control with Git and Ignition.
 
 ## How to use this repository
+
 This repo can be used as a manual to be read from top to bottom in order to learn the basics of git all the way up to advanced strategies, or as a reference to be reminded of certain functions or strategies.
 
 If you consider yourself new to git with Ignition, it may be useful to go through the [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git), which will give you a practical ideal of git version control for Ignition development
 
 ## Course Contents
+>
 > :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for later documentation development.
 
 - [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git)
@@ -43,13 +48,21 @@ If you consider yourself new to git with Ignition, it may be useful to go throug
     - stash
     - reflog
     - reset
+
 ## Overview
+
 ### What is Git?
-Git is a version control system that helps developers keep track of changes to their code over time. 
+
+Git is a version control system that helps developers keep track of changes to their code over time.
+
 ### Why do we use version control?
+
 It allows multiple developers to work on the same project simultaneously, tracks changes to source code and other files, and provides tools for managing different versions of files, merging changes, and rolling back changes when necessary. Git is widely used in software development and other version control tasks due to its speed, efficiency, and flexibility.
+
 ### Why is version control important?
+
 Version control is important because it allows a team to (among many other things):
+
 - Track all of the changes made to the project
 - View who made changes
 - Merge changes without overwriting other features
@@ -59,6 +72,7 @@ Version control is important because it allows a team to (among many other thing
 ## [Software Requirements](Software%20Requirements.md)
 
 ## Terms
+
 | **Keyword** | **Description** |
 | --- | --- |
 | `Branch` | Pointer to a commit |
@@ -96,10 +110,13 @@ Version control is important because it allows a team to (among many other thing
 | `pull` | Fetch and merge changes on your remote repository to your working directory |
 | `push` | Send changes of the committed files on your branch to remote repository |
 | `status` | List the files you’ve changed |
-#### example: 
+
+### Example
+>
 > git status
 
 ## Common Shell Commands
+
 | **Command** | **Description** |
 | --- | --- |
 | `cd` | Change directory |
@@ -107,10 +124,12 @@ Version control is important because it allows a team to (among many other thing
 | `mkdir` | Make new directory |
 | `pwd` | Print working directory |
 
-#### example:
+### Example
+>
 > cd /usr/local/bin
 
 ## Objectives
+
 - [Connect workstation to GitHub](Connect%20your%20Workstation.md)
 - [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
