@@ -6,22 +6,27 @@
 
 ## Procedure
 
-1. Open a CLI
-2. Configure username and email.
+1. [Download and install Git](https://git-scm.com/downloads)
+   1. It is recommended to override the default branch name for new repositories to "main".
+   ![Override default branch](images/setup-override-default-branch.png)
+   2. All other install sections can be left as default
+2. [Download and install GitHub CLI](https://cli.github.com/)
+3. Open a CLI
+4. Configure username and email.
 
     ```shell
     git config --global user.name “your username”
     git config -–global user.email “your email”
     ```
 
-3. Verify email and username was configured correctly.
+5. Verify email and username was configured correctly.
 
     ```shell
     git config --global user.name
     git config -–global user.email
     ```
 
-4. Authenticate with a GitHub Host
+6. Authenticate with a GitHub Host
 
     ```shell
     gh auth login
