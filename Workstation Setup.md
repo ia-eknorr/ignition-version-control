@@ -1,6 +1,23 @@
-# Download/Install required software
+# Workstation Setup
 
-There are many ways to use version control with Ignition, and as you grow in your knowledge of version control, you may find something that works better for you. Below are recommendations to get you started. These are tried and true in the industry, so it will be a great starting point.
+Before getting started with version control, you will need to set up your workstation with the necessary software. There are many ways to use version control with Ignition, and as you grow in your knowledge of version control, you may find something that works better for you. Below are recommendations to get you started. These are tried and true in the industry, so it will be a great starting point.
+
+## Table of Contents
+
+- [Workstation Setup](#workstation-setup)
+  - [Table of Contents](#table-of-contents)
+  - [Required Software](#required-software)
+    - [Visual Studio Code](#visual-studio-code)
+      - [Installation](#installation)
+      - [Configuration](#configuration)
+    - [Git](#git)
+      - [Download](#download)
+      - [Installation](#installation-1)
+      - [Configuration](#configuration-1)
+    - [Github CLI](#github-cli)
+      - [Download](#download-1)
+      - [Installation](#installation-2)
+      - [Configuration](#configuration-2)
 
 ## Required Software
 
@@ -144,3 +161,9 @@ Although other version control software exists, this is IA's preferred version c
    - There are multiple ways to authenticate - one example is provided below.
 
     ![GitHub Auth Login](images/gh-auth-login.png)
+
+More information about the setup process can be found [here](https://docs.github.com/en/get-started/quickstart/set-up-git).
+
+Now your workstation is connected to GitHub!
+
+**Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**

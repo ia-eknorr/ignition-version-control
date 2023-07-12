@@ -36,11 +36,10 @@ If you consider yourself new to git with Ignition, it may be useful to go throug
 
 - [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git)
 - [Basics of Git](https://inductive-git.ia.local/eknorr/version-control)
-  - [Connect workstation to GitHub](Connect%20your%20Workstation.md)
+  - [Workstation Setup](Workstation%20Setup.md)
   - [Initialize a local repository](Initialize%20a%20Local%20Repository.md)
   - [Create a branch and push changes](Create%20a%20Branch%20and%20Push%20changes.md)
   - [Create a pull request](Create%20a%20Pull%20Request.md)
-  - [Version control in Ignition](Ignition.md)
 - [Branching Strategies](Branching%20Strategy.md)
 - Intermediate Git
   - Resolving Merge conflicts
@@ -130,7 +129,7 @@ Version control is important because it allows a team to (among many other thing
 
 ## Objectives
 
-- [Connect workstation to GitHub](Connect%20your%20Workstation.md)
+- [Workstation Setup](Workstation%20Setup.md)
 - [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
