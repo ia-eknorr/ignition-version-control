@@ -1,0 +1,7 @@
+{
+    "markdownlint.config": {
+        "MD033": {
+            "allow_different_nesting": true
+        }
+    }
+}
