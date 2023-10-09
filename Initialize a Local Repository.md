@@ -38,9 +38,9 @@
       > :memo: **_Note_**: The git remote add command takes two arguments:
       >
       > - A remote name, for example, `origin`
-      > - A remote URL, for example, <https://inductive-git.ia.local/eknorr/version-control.git>
+      > - A remote URL, for example, <https://github.com/ia-eknorr/ignition-version-control.git>
       >
-      > Although any name _could_ be used to reference the remote repository, it is conventional to use  `origin`. The [IA Git Style Guide](https://inductive-git.ia.local/eknorr/git-style-guide.git) should be followed wherever possible.
+      > Although any name _could_ be used to reference the remote repository, it is conventional to use  `origin`. The [IA Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide) should be followed wherever possible.
 
       > :memo:**_Note_**: A local repository can have multiple remote sources. In the case of a forked repository, an `upstream` remote would conventionally reference the original repository location, while `origin` would reference the copy that was made to push local changes for testing before pushing to the `upstream` repository.
 
