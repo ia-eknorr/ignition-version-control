@@ -11,7 +11,6 @@
     - [What is Git?](#what-is-git)
     - [Why do we use version control?](#why-do-we-use-version-control)
     - [Why is version control important?](#why-is-version-control-important)
-  - [Software Requirements](#software-requirements)
   - [Terms](#terms)
   - [Common Git Commands](#common-git-commands)
     - [Example](#example)
@@ -26,24 +25,25 @@ Learn how to use version control with Git and Ignition.
 
 ## How to use this repository
 
-This repo can be used as a manual to be read from top to bottom in order to learn the basics of git all the way up to advanced strategies, or as a reference to be reminded of certain functions or strategies.
+This repo can be used as a manual to be read from top to bottom in order to learn the basics of git and gain intermediate strategies, or as a reference to be reminded of certain functions or strategies.
 
-If you consider yourself new to git with Ignition, it may be useful to go through the [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git), which will give you a practical ideal of git version control for Ignition development
+If you consider yourself new to git with Ignition, it may be useful to go through the [Git Ignition Lab](https://github.com/ia-eknorr/git-ignition-lab), which will give you a practical ideal of git version control for Ignition development.
 
 ## Course Contents
 >
-> :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for later documentation development.
+> :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for future development.
 
-- [Git Ignition Lab](https://inductive-git.ia.local/eknorr/git-ignition-lab.git)
-- [Basics of Git](https://inductive-git.ia.local/eknorr/version-control)
+- [Git Ignition Lab](https://github.com/ia-eknorr/git-ignition-lab)
+- [Basics of Git](https://github.com/ia-eknorr/ignition-version-control)
   - [Workstation Setup](Workstation%20Setup.md)
   - [Initialize a local repository](Initialize%20a%20Local%20Repository.md)
   - [Create a branch and push changes](Create%20a%20Branch%20and%20Push%20changes.md)
   - [Create a pull request](Create%20a%20Pull%20Request.md)
 - [Branching Strategies](Branching%20Strategy.md)
+- [Ignition Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide)
 - Intermediate Git
   - Resolving Merge conflicts
-  - intermediate commands
+  - Intermediate commands
     - stash
     - reflog
     - reset
@@ -67,8 +67,6 @@ Version control is important because it allows a team to (among many other thing
 - Merge changes without overwriting other features
 - Revert accidentally deleted work.
 - Provide context into why a certain decision was made about the project and who made that decision
-
-## [Software Requirements](Software%20Requirements.md)
 
 ## Terms
 
@@ -113,6 +111,8 @@ Version control is important because it allows a team to (among many other thing
 ### Example
 >
 > git status
+> git checkout my-branch
+> git pull origin main
 
 ## Common Shell Commands
 
@@ -125,7 +125,7 @@ Version control is important because it allows a team to (among many other thing
 
 ### Example
 >
-> cd /usr/local/bin
+> cd /usr/local/bin/ignition
 
 ## Objectives
 
@@ -136,4 +136,4 @@ Version control is important because it allows a team to (among many other thing
 
 ## Requests? Issues?
 
-If you notice any gaps, typos, or unclear verbiage in this documentation or have any requests for a how-to guide, [open an issue](https://inductive-git.ia.local/eknorr/version-control/issues) or submit a pull request.
+If you have any questions or notice something that doesn't look right, [open an issue](https://github.com/ia-eknorr/ignition-version-control/issues) or submit a pull request.

@@ -23,7 +23,7 @@ Before getting started with version control, you will need to set up your workst
 
 ### Visual Studio Code
 
-One of the most widely used IDE's. Do yourself a favor and just download it. If you hate it, I'll give you $5.
+One of the most widely used Integrated Development Environments (IDE). While there are many other IDEs to choose from, each with their individual pros and cons, this guide will use VS Code.
 
 - [Downloads Page](https://code.visualstudio.com/download)
 
@@ -33,7 +33,7 @@ One of the most widely used IDE's. Do yourself a favor and just download it. If 
 
 #### Configuration
 
-Although no additional configuration is required for VSCode, there are several [Extensions](https://marketplace.visualstudio.com/vscode) that provide significant quality of life improvements in VSCode. Below is a list that you might find useful:
+Although no additional configuration is required for VS Code, there are several [Extensions](https://marketplace.visualstudio.com/vscode) that provide significant quality of life improvements in VS Code. Below is a list that you might find useful:
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
@@ -76,7 +76,7 @@ Although other version control software exists, this is IA's preferred version c
 >
 > For Windows:
 > 
-> - Check if you have winget by running `winget -v` on Command Prompt. If it doesn't return a version number, then talk to @eknorr. He will help you.
+> - Check if you have winget by running `winget -v` on Command Prompt. If it doesn't return a version number, then try the direct download link given above.
 > 
 > For MacOS:
 > 
@@ -102,7 +102,9 @@ Although other version control software exists, this is IA's preferred version c
 
     ![Git Version](images/git-version.png)
    - If a git version number is not returned, check that the installation has finished, or try uninstalling and reinstalling using the procedure in the previous section.
+
 3. Configure username and email
+   - This is the email and name that will be shown on your commits and pull requests.
 
     ```shell
     git config --global user.name “your username”
@@ -157,7 +159,7 @@ Although other version control software exists, this is IA's preferred version c
     gh auth login
     ```
   
-   - Follow the prompts to log in with GitHub Enterprise Server.
+   - Follow the prompts to log in to Github.
    - There are multiple ways to authenticate - one example is provided below.
 
     ![GitHub Auth Login](images/gh-auth-login.png)
@@ -166,4 +168,5 @@ More information about the setup process can be found [here](https://docs.github
 
 Now your workstation is connected to GitHub!
 
-**Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**
+**Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**vccgbftcgkfitjuiutrdiflcgttfkuieukrtij
+dtcv
