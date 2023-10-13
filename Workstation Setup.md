@@ -75,11 +75,11 @@ Although other version control software exists, this is IA's preferred version c
 > Winget comes pre-installed on Windows, but Homebrew (for MacOS/Linux) needs to be installed separately
 >
 > For Windows:
-> 
+>
 > - Check if you have winget by running `winget -v` on Command Prompt. If it doesn't return a version number, then try the direct download link given above.
-> 
+>
 > For MacOS:
-> 
+>
 > - Run the following command in a terminal window: `curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh`
 
 #### Installation
@@ -168,5 +168,4 @@ More information about the setup process can be found [here](https://docs.github
 
 Now your workstation is connected to GitHub!
 
-**Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**vccgbftcgkfitjuiutrdiflcgttfkuieukrtij
-dtcv
+**Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**
