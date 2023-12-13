@@ -87,7 +87,9 @@ Although other version control software exists, this is IA's preferred version c
 - Run installation wizard
 - Override the default branch name for new repositories to "main"
   - The historically used default branch of "master" has fallen out of favor in recent years, opting instead for "main", "trunk", or "stable"
+
  ![Override default branch](images/setup-override-default-branch.png)
+
 - All other install sections can be left as default
 
 #### Configuration
@@ -134,7 +136,7 @@ Although other version control software exists, this is IA's preferred version c
   winget install -e --id GitHub.cli
   ```
 
-  - [Direct Download](https://github.com/cli/cli#installation)
+  - [Direct Download](https://cli.github.com)
 
 #### Installation
 
