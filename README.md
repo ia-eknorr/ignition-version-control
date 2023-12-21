@@ -18,6 +18,7 @@
     - [Example](#example-1)
   - [Objectives](#objectives)
   - [Requests? Issues?](#requests-issues)
+    - [Cred](#cred)
 
 ## Purpose
 
@@ -137,3 +138,7 @@ Version control is important because it allows a team to (among many other thing
 ## Requests? Issues?
 
 If you have any questions or notice something that doesn't look right, [open an issue](https://github.com/ia-eknorr/ignition-version-control/issues) or submit a pull request.
+
+### Cred
+
+Much inspiration for all of this was taken from [Design group](https://github.com/design-group).
