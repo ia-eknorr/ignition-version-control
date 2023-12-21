@@ -133,6 +133,7 @@ Version control is important because it allows a team to (among many other thing
 - [Workstation Setup](Workstation%20Setup.md)
 - [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
+- [Branching Strategy](Branching%20Strategy.md)
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
 
 ## Requests? Issues?
