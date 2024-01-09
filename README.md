@@ -142,4 +142,4 @@ If you have any questions or notice something that doesn't look right, [open an 
 
 ### Cred
 
-Much inspiration for all of this was taken from [Design group](https://github.com/design-group).
+Much inspiration for all of this was taken from [Design Group](https://github.com/design-group).
