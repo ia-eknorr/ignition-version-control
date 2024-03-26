@@ -1,16 +1,40 @@
 # Installing Docker for Ignition Development
 
-## Install Windows Subsystem for Linux (WSL)
+## Install Windows Subsystem for Linux (WSL) - Windows Users Only
+
+NOTE: If currently using Docker Desktop, WSL may already be installed. Regardless, follow the instructions below to check current state.
 
 1. Launch Command Prompt with `Win+R` and then type `cmd`.
-2. Run the following command: `wsl --install -d Ubuntu`, 
-   then restart your computer for the WSL installation to take affect.
-3. Install the [WSL 2 Kernel](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
-4. After the installation, change the default version with `wsl --set-version Ubuntu 2`.
-5. After changing the default version, run `wsl --update` to make sure the kernel is fully up to date.
-6. Once update is complete, create credentialsw for the 'Ubuntu for Windows' application that was installed or by typing `wsl` in command prompt.
+2. From within the Command Prompt, type the following to check current version and state (if exists):
+    ```
+    wsl -l -v
+    ```
+3. If WSL is already installed, please skip ahead to Step 5. Otherwise, please continue to step 4 to install WSL.
+4. Run the following command to install WSL: 
+    ```
+    wsl --install
+    ```
+5. Run the following command to install the latest Linux Ubuntu distribution: 
+    ```
+    wsl --install -d Ubuntu
+    ```
+6. Restart your computer for the WSL installation to take affect.
+7. Download the [WSL 2 Kernel Update Package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+8. Run the update package (Double-click to run - you will be prompted for elevated permissions, select ‘yes’ to approve this installation)
+9. After the installation, change the default version with the following:
+    ```
+    wsl --set-version Ubuntu 2
+    ```
+    NOTE: In some cases, the default WSL version may already be set to 2, so an error code may appear. Please disregard and continue on to the next step.
 
-*The entry prompt will not show any characters as you type your password.*
+10. After changing the default version, run the following to make sure the kernel is fully up to date:
+    ```
+    wsl --update
+    ```
+11. Once update is complete, create credentials for the 'Ubuntu for Windows' application that was installed or by typing the following in command prompt. *NOTE: The entry prompt will not show any characters as you type your password.*
+    ```
+    wsl
+    ```
 
 ## Program installation
 
