@@ -17,6 +17,7 @@
   - [Common Shell Commands](#common-shell-commands)
     - [Example](#example-1)
   - [Objectives](#objectives)
+  - [Pre-commit](#pre-commit)
   - [Requests? Issues?](#requests-issues)
     - [Cred](#cred)
 
@@ -145,6 +146,10 @@ cd /usr/local/bin/ignition
 **Next**: [Workstation Setup](Workstation%20Setup.md)
 
 ---
+
+## Pre-commit
+
+This repository uses [pre-commit](https://pre-commit.com/) to enforce code style. To install the pre-commit hooks, run `pre-commit install` from the root of the repository. This will run the hooks on every commit. If you would like to run the hooks manually, run `pre-commit run --all-files` from the root of the repository. Pre-commit will be run as a action and will need to pass as a check before merging.
 
 ## Requests? Issues?
 
