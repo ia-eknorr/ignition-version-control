@@ -31,8 +31,8 @@ This repo can be used as a manual to be read from top to bottom in order to lear
 If you consider yourself new to git with Ignition, it may be useful to go through the [Git Ignition Lab](https://github.com/ia-eknorr/git-ignition-lab), which will give you a practical ideal of git version control for Ignition development.
 
 ## Course Contents
->
-> :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for future development.
+
+> [!TIP] Bullet points that are not hyperlinked are road-mapped for future development.
 
 - [Git Ignition Lab](https://github.com/ia-eknorr/git-ignition-lab)
 - [Basics of Git](https://github.com/ia-eknorr/ignition-version-control)
@@ -110,10 +110,12 @@ Version control is important because it allows a team to (among many other thing
 | `status` | List the files you’ve changed |
 
 ### Example
->
-> git status
-> git checkout my-branch
-> git pull origin main
+
+```bash
+git status
+git checkout my-branch
+git pull origin main
+```
 
 ## Common Shell Commands
 
@@ -125,8 +127,10 @@ Version control is important because it allows a team to (among many other thing
 | `pwd` | Print working directory |
 
 ### Example
->
-> cd /usr/local/bin/ignition
+
+```bash
+cd /usr/local/bin/ignition
+```
 
 ## Objectives
 
