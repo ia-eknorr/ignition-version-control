@@ -1,0 +1,15 @@
+---
+    name: Repo Lint
+    
+    on:
+      push:
+      pull_request:
+        branches: [main]
+        types: [closed]
+    
+    jobs:
+      repo-lint:
+        uses: inductive-automation/se-reusable-workflows/.github/workflows/repo-lint.yml@v0.2
+        with:
+          yamllint: true
+          markdownlint: true
