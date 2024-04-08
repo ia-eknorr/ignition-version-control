@@ -10,3 +10,14 @@ repos:
         args: [
           "--config=.markdownlint.json",
         ]
+
+      - id: yamllint
+        name: YAML Lint
+        entry: yamllint
+        language: system
+        types: [yaml]
+        args:
+          [
+            "--config-file=.yamllint.yml",
+            "--format=standard"
+          ]
