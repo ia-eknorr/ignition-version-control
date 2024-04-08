@@ -66,11 +66,11 @@ Although other version control software exists, this is IA's preferred version c
 
 - [Direct Download](https://git-scm.com/download/win)
 
-> :bulb: **FAQ**: What is Homebrew? What is Winget?
+> [!TIP] What is Homebrew? What is Winget?
 >
 > Winget and Homebrew are package managers designed for different operating systems. Winget is the official package manager for Windows, providing a command-line interface to install, manage, and update software packages on Windows 10 and later versions. Homebrew, on the other hand, is a package manager for macOS and Linux, allowing users to easily install and manage a wide range of software packages through a command-line interface and a formula system. Both package managers simplify the process of installing and managing software, providing centralized repositories and handling package dependencies to ensure a streamlined experience for users.
 
-> :bulb: **FAQ**: What if I don't have these?
+> [!TIP] What if I don't have these package managers?
 >
 > Winget comes pre-installed on Windows, but Homebrew (for MacOS/Linux) needs to be installed separately
 >
