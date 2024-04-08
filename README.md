@@ -140,6 +140,12 @@ cd /usr/local/bin/ignition
 - [Branching Strategy](Branching%20Strategy.md)
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
 
+---
+
+**Next**: [Workstation Setup](Workstation%20Setup.md)
+
+---
+
 ## Requests? Issues?
 
 If you have any questions or notice something that doesn't look right, [open an issue](https://github.com/ia-eknorr/ignition-version-control/issues) or submit a pull request.

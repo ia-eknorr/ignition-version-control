@@ -26,8 +26,7 @@ Having a well defined branching strategy can help teams work more effectively an
 
 That being said, there may be different strategies employed based on the size of the project, as the oversight desired in a larger project may not be necessary in a smaller project.
 
-> :bulb: **_FAQ_**: How do I know which strategy to use?
->
+> [!TIP] How do I know which strategy to use?
 > The choice of branching strategy depends on several factors including the size of the project, the number of engineers working on the project, and the cruciality of testing.
 >
 > For instance, a project with a high profile or degree of visibility may require a greater amount of testing, necessitating, a High Complexity Project Strategy, while a project with several engineers working concurrently on distinct and straightforward features may employ a Low Complexity Project Workflow due to the relatively low cruciality and need for testing.
@@ -59,7 +58,7 @@ gitGraph
 ### Workflow
 
 1. **Create a main branch**: Create a main branch, typically called "main", which represents the latest stable version of the code.
-2. **Create a feature branch**: When starting work on a new feature or bugfix, create a new branch off of the main branch. Name the branch something that describes the feature or bugfix following the [IA Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide?tab=readme-ov-file#branches-1), such as "feature/new-login-page".
+2. **Create a feature branch**: When starting work on a new feature or bugfix, create a new branch off of the main branch. Name the branch something that describes the feature or bugfix following the [IA Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide?tab=readme-ov-file#branches-1), such as "eknorr/new-login-page" or "feature/update-navigation".
 
 3. **Develop on the feature branch**: Make changes and commits on the feature branch to implement the new feature or bugfix. Keep the changes focused on the specific feature or bugfix being worked on.
 
@@ -140,3 +139,7 @@ gitGraph
 
 - As more branches are added it may become difficult to manage as developers merge their changes from the development branch to the main
 - Higher complexity can lead to longer development time
+
+---
+
+ **Next: [Create a Pull Request](Create%20a%20Pull%20Request.md)**

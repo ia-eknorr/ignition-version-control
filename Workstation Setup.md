@@ -104,6 +104,7 @@ Although other version control software exists, this is IA's preferred version c
 
     ![Git Version](images/git-version.png)
    - If a git version number is not returned, check that the installation has finished, or try uninstalling and reinstalling using the procedure in the previous section.
+   - Git version 2.35.0 or later is recommended
 
 3. Configure username and email
    - This is the email and name that will be shown on your commits and pull requests.
@@ -169,5 +170,7 @@ Although other version control software exists, this is IA's preferred version c
 More information about the setup process can be found [here](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
 Now your workstation is connected to GitHub!
+
+---
 
 **Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**
