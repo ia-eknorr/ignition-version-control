@@ -15,6 +15,7 @@ repos:
         name: YAML Lint
         entry: yamllint
         language: system
+        files: \.(yml|yaml)$
         types: [yaml]
         args:
           [
