@@ -66,11 +66,11 @@ Although other version control software exists, this is IA's preferred version c
 
 - [Direct Download](https://git-scm.com/download/win)
 
-> :bulb: **FAQ**: What is Homebrew? What is Winget?
+> [!TIP] What is Homebrew? What is Winget?
 >
 > Winget and Homebrew are package managers designed for different operating systems. Winget is the official package manager for Windows, providing a command-line interface to install, manage, and update software packages on Windows 10 and later versions. Homebrew, on the other hand, is a package manager for macOS and Linux, allowing users to easily install and manage a wide range of software packages through a command-line interface and a formula system. Both package managers simplify the process of installing and managing software, providing centralized repositories and handling package dependencies to ensure a streamlined experience for users.
 
-> :bulb: **FAQ**: What if I don't have these?
+> [!TIP] What if I don't have these package managers?
 >
 > Winget comes pre-installed on Windows, but Homebrew (for MacOS/Linux) needs to be installed separately
 >
@@ -104,6 +104,7 @@ Although other version control software exists, this is IA's preferred version c
 
     ![Git Version](images/git-version.png)
    - If a git version number is not returned, check that the installation has finished, or try uninstalling and reinstalling using the procedure in the previous section.
+   - Git version 2.35.0 or later is recommended
 
 3. Configure username and email
    - This is the email and name that will be shown on your commits and pull requests.
@@ -169,5 +170,7 @@ Although other version control software exists, this is IA's preferred version c
 More information about the setup process can be found [here](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
 Now your workstation is connected to GitHub!
+
+---
 
 **Next: [Initialize a Local Repository](Initialize%20a%20Local%20Repository.md)**
