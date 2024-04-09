@@ -1,3 +1,4 @@
+---
 name: Repo Lint
 
 on:
@@ -20,11 +21,9 @@ jobs:
           npm install -g markdownlint-cli
       - name: Run markdownlint
         run: 'markdownlint .'
-        # run: 'markdownlint "**/*.md"'
   yamllint:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - name: Run yamllint
         run: 'yamllint .'
-        # run: 'find . -type f \( -name "*.yml" -o -name "*.yaml" \) -print0 | xargs -0 yamllint'
