@@ -17,6 +17,7 @@
   - [Common Shell Commands](#common-shell-commands)
     - [Example](#example-1)
   - [Objectives](#objectives)
+  - [Pre-commit](#pre-commit)
   - [Requests? Issues?](#requests-issues)
     - [Cred](#cred)
 
@@ -31,8 +32,8 @@ This repo can be used as a manual to be read from top to bottom in order to lear
 If you consider yourself new to git with Ignition, it may be useful to go through the [Git Ignition Lab](https://github.com/ia-eknorr/git-ignition-lab), which will give you a practical ideal of git version control for Ignition development.
 
 ## Course Contents
->
-> :memo: **Note**: Bulleted that are not hyperlinked are road-mapped for future development.
+
+> [!TIP] Bullet points that are not hyperlinked are road-mapped for future development.
 
 - [Git Ignition Lab](https://github.com/ia-eknorr/git-ignition-lab)
 - [Basics of Git](https://github.com/ia-eknorr/ignition-version-control)
@@ -111,10 +112,12 @@ Version control is important because it allows a team to (among many other thing
 | `status` | List the files you’ve changed |
 
 ### Example
->
-> git status
-> git checkout my-branch
-> git pull origin main
+
+```bash
+git status
+git checkout my-branch
+git pull origin main
+```
 
 ## Common Shell Commands
 
@@ -126,8 +129,10 @@ Version control is important because it allows a team to (among many other thing
 | `pwd` | Print working directory |
 
 ### Example
->
-> cd /usr/local/bin/ignition
+
+```bash
+cd /usr/local/bin/ignition
+```
 
 ## Objectives
 
@@ -136,6 +141,16 @@ Version control is important because it allows a team to (among many other thing
 - [Create a Branch and Push changes](Create%20a%20Branch%20and%20Push%20changes.md)
 - [Branching Strategy](Branching%20Strategy.md)
 - [Create a Pull Request](Create%20a%20Pull%20Request.md)
+
+---
+
+**Next**: [Workstation Setup](Workstation%20Setup.md)
+
+---
+
+## Pre-commit
+
+This repository uses [pre-commit](https://pre-commit.com/) to enforce code style. To install the pre-commit hooks, run `pre-commit install` from the root of the repository. This will run the hooks on every commit. If you would like to run the hooks manually, run `pre-commit run --all-files` from the root of the repository. Pre-commit will be run as a action and will need to pass as a check before merging.
 
 ## Requests? Issues?
 

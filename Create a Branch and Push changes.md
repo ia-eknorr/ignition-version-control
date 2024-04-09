@@ -11,7 +11,7 @@
 
 Git provides a framework to create multiple features between multiple developers at the same time, but the method by which a project implements git is left very open-ended. This section will provide a method by which "branches" can be created and maintained, as well as how to stage, commit, and push local changes to the remote repository to be merged with other collaborators' work.
 
-This document loosely follows GitHub Flow, one of many version control strategies. More information about GitHub Flow can be found in the [Branching Strategy Guide](Branching%20Strategy.md) or online [here](https://docs.github.com/en/enterprise-server@3.7/get-started/quickstart/github-flow).
+This document loosely follows GitHub Flow, one of many version control strategies. More information about GitHub Flow can be found in the [Branching Strategy Guide](Branching%20Strategy.md) or online [here](https://docs.github.com/en/get-started/using-github/github-flow).
 
 ## Procedure
 
@@ -32,7 +32,7 @@ This document loosely follows GitHub Flow, one of many version control strategie
     git checkout -b branch-name
     ```
 
-    > :bulb: **FAQ**: How do I know if I'm on the right branch?
+    > [!TIP] How do I know if I'm on the right branch?
     >  
     > When [Initializing a Local Repository](Initialize%20a%20Local%20Repository.md), a default branch name of `main` was given. According to the [IA Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide), it is not recommended to develop on the `main`. If preparing to develop a new feature, consider making a new branch for that feature with a descriptive name.
 
@@ -59,10 +59,10 @@ This document loosely follows GitHub Flow, one of many version control strategie
         git add . 
         ```
 
-    > :memo: **Note**: This adds files to the staging area, but doesn't commit them yet. The previous step can be done multiple times until all relevant files are added to the staging area
+    > [!NOTE]
+    > This adds files to the staging area, but doesn't commit them yet. The previous step can be done multiple times until all relevant files are added to the staging area
 
-    > :bulb: **FAQ**: Which files do I add and commit?
-    >
+    > [!TIP] Which files do I add and commit?
     > It's possible that some untracked changes shown in `git status` are not part of a certain commit or feature in general (in the case of a changed resource file that was not actually edited). It is recommended to make commits for one feature or sub-feature at a time. For instance, if a label was added to a view, then a style class was created to be added to that label. It would be recommended to make two commits: one for any style class changes, one for any changes made to that view.
 
 5. Commit changes and add a message
@@ -93,11 +93,12 @@ This document loosely follows GitHub Flow, one of many version control strategie
       - `origin` is the name given to the remote repository when [initializing a remote repository](Initialize%20a%20Local%20Repository.md). Remember that it could be called something different than `origin`.
       - `HEAD` refers to the currently checked-out branch's latest commit. Alternatively, the current branch name could be explicitly called out here.
 
-> :bulb: **FAQ**: What if I forget what I called my remote source?
->
+> [!TIP] What if I forget what I called my remote source?
 > Run `git remote -v` to see all remote sources
 > ![Remote Sources](images/remote-sources.png)
 
 Now that changes have been pushed from the local environment to the remote repository, it's time to merge changes into the remote main so all collaborators have access.
 
-**Next: [Create a Pull Request](Create%20a%20Pull%20Request.md)**
+---
+
+**Next: [Branching Strategy](Branching%20Strategy.md)**
