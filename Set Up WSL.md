@@ -6,9 +6,11 @@ NOTE: If currently using Docker Desktop, WSL may already be installed. Regardles
 
 1. Launch Command Prompt with `Win+R` and then type `cmd`.
 2. From within the Command Prompt, type the following to check current version and state (if exists):
-    ```
+
+    ```bash
     wsl -l -v
     ```
+
 3. If WSL is already installed, please skip ahead to Step 5. Otherwise, please continue to step 4 to install WSL.
 4. Run the following command to install WSL: 
     ```
