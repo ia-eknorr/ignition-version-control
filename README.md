@@ -41,6 +41,7 @@ If you consider yourself new to git with Ignition, it may be useful to go throug
   - [Initialize a local repository](Initialize%20a%20Local%20Repository.md)
   - [Create a branch and push changes](Create%20a%20Branch%20and%20Push%20changes.md)
   - [Create a pull request](Create%20a%20Pull%20Request.md)
+  - [Merge a pull request](Merge%20a%20Pull%20Request.md)
 - [Branching Strategies](Branching%20Strategy.md)
 - [Ignition Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide)
 - Intermediate Git
