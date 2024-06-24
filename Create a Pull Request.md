@@ -29,3 +29,7 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
 Once a pull request has been made, the code needs to be reviewed by the repository’s code owner to be merged into main branch.
 
 - You may the owner, in which case, you could approve the pull request and merge the code, but normally the Lead Engineer(s) on the project will review the code then perform the merge if they determine the code is correct.
+
+---
+
+ **Next: [Merge a Pull Request](Merge%20a%20Pull%20Request.md)**
