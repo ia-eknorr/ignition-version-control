@@ -23,7 +23,7 @@ When the pull request is ready to merge, any conflicts with the destination bran
     - If there are any conflicts with the destination branch, merge will be blocked until conflicts are resolved.
 
       > [!TIP]
-      >  To resolve conflicts, merge the latest changes from the remote destination branch into your local branch and push the local branch to the remote. The PR made from that branch will be automatically updated with the latest changes.
+      > To resolve conflicts, merge the latest changes from the remote destination branch into your local branch and push the local branch to the remote. The PR made from that branch will be automatically updated with the latest changes.
 
 2. Select merge strategy and complete the merge
 

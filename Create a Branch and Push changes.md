@@ -33,7 +33,6 @@ This document loosely follows GitHub Flow, one of many version control strategie
     ```
 
     > [!TIP] How do I know if I'm on the right branch?
-    >  
     > When [Initializing a Local Repository](Initialize%20a%20Local%20Repository.md), a default branch name of `main` was given. According to the [IA Git Style Guide](https://github.com/ia-eknorr/ignition-git-style-guide), it is not recommended to develop on the `main`. If preparing to develop a new feature, consider making a new branch for that feature with a descriptive name.
 
 3. Make edits to files in VSCode or Ignition Designer
